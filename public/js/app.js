@@ -1,4 +1,3 @@
-
 console.log("client side java scrip file is loaded")
 
 
