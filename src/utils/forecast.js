@@ -12,7 +12,7 @@ const forecast=(latitude,longitude,callback)=>{
             callback("unable to fing location",undefined)
         }else{
   //console.log("hhhhhhhhhh",response.body.current)   
-               callback(undefined,body.current.weather_descriptions+ " It is currently  " +body.current.temperature+ " mmmm.there is a " +body.current.precip+ " %chance of rain")
+               callback(undefined,body.current.weather_descriptions+ " It is currently  " +body.current.temperature+ " mmmm.there is a " +body.current.precip+ " %chance of rain...It feels like"+body.current.feelslike+"degrees out.If the humidity is "+body.current.humidity+"% area")
               // callback(undefined,'It is currently'+response.body.features[1].text+'degrees out there.Feels like '+response.body.current.features[1].place_type+'degress out')
 
             }
