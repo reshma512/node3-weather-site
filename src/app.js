@@ -3,6 +3,7 @@ const express=require('express')
 const hbs=require('hbs')
 const forecast=require('./utils/forecast.js')
 const geocode=require('./utils/geocode.js')
+const port=process.env.PORT||3000
 
 
 
@@ -117,6 +118,6 @@ app.get('/products',(req,res)=>{
 
 
 
-app.listen(3000,()=>{//starting server is synchronous process
+app.listen(port,()=>{//starting server is synchronous process
 console.log('Server is up at port 3000')
 })
